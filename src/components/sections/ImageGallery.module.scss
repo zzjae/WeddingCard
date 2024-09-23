@@ -5,7 +5,7 @@
   .wrap-image {
     width: 100%;
     position: relative;
-    //가상선책자
+    //가상선택자
     &::after {
       display: block;
       content: '';
