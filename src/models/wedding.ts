@@ -1,36 +1,36 @@
 export interface Wedding {
-  id: number
-  date: string
-  location: Location
+  id: number;
+  date: string;
+  location: Location;
   message: {
-    intro: string
-    invitation: string
-  }
-  galleryImages: string[]
-  attendCount: number
+    intro: string;
+    invitation: string;
+  };
+  galleryImages: string[];
+  attendCount: number;
 
-  groom: Person & { parents: Person[] }
-  bride: Person & { parents: Person[] }
+  groom: Person & { parents: Person[] };
+  bride: Person & { parents: Person[] };
 }
 
 export interface Location {
-  lat: number
-  lng: number
-  name: string
-  address: string
-  link: string
+  lat: number;
+  lng: number;
+  name: string;
+  address: string;
+  link: string;
   waytocome: {
-    metro: string[]
-    bus: string[]
-  }
+    metro: string[];
+    bus: string[];
+  };
 }
 
 export interface Account {
-  bankNmae: string
-  accountNumber: string
+  bankNmae: string;
+  accountNumber: string;
 }
 export interface Person {
-  name: string
-  phoneNumber: string
-  account: Account
+  name: string;
+  phoneNumber: string;
+  account: Account;
 }
