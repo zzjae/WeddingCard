@@ -1,15 +1,15 @@
-import classNames from 'classnames/bind'
-import styles from './Invitation.module.scss'
-import Section from '@shared/Section'
-import Text from '@shared/Text'
-const cx = classNames.bind(styles)
+import classNames from 'classnames/bind';
+import styles from './Invitation.module.scss';
+import Section from '@shared/Section';
+import Text from '@shared/Text';
+const cx = classNames.bind(styles);
 function Invitation({ message }: { message: string }) {
   return (
     <Section className={cx('container')}>
       <IconPost className={cx('icon-post')} />
       <Text>{message}</Text>
     </Section>
-  )
+  );
 }
 
 function IconPost({ className }: { className: string }) {
@@ -29,6 +29,6 @@ function IconPost({ className }: { className: string }) {
         fill-rule="evenodd"
       />
     </svg>
-  )
+  );
 }
-export default Invitation
+export default Invitation;

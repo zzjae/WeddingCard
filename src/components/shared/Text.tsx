@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 function Text({ children }: { children: string }) {
   const message = children.split('\n').map((str, idx, array) => {
@@ -7,10 +7,10 @@ function Text({ children }: { children: string }) {
         {str}
         {idx === array.length - 1 ? null : <br />}
       </React.Fragment>
-    )
-  })
+    );
+  });
 
-  return <div>{message}</div>
+  return <div>{message}</div>;
 }
 
-export default Text
+export default Text;

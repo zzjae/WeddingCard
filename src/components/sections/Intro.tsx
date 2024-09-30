@@ -1,17 +1,17 @@
-import classNames from 'classnames/bind'
-import Section from '@shared/Section'
-import styles from './Intro.module.scss'
-import Text from '@shared/Text'
-import { parseISO, format } from 'date-fns'
-import { ko } from 'date-fns/locale'
-const cx = classNames.bind(styles)
+import classNames from 'classnames/bind';
+import Section from '@shared/Section';
+import styles from './Intro.module.scss';
+import Text from '@shared/Text';
+import { parseISO, format } from 'date-fns';
+import { ko } from 'date-fns/locale';
+const cx = classNames.bind(styles);
 
 interface IntroProps {
-  groomName: string
-  brideName: string
-  date: string
-  locationName: string
-  message: string
+  groomName: string;
+  brideName: string;
+  date: string;
+  locationName: string;
+  message: string;
 }
 function Intro({
   groomName,
@@ -37,7 +37,7 @@ function Intro({
       {/* <div dangerouslySetInnerHTML={{ __html: message }}></div> */}
       <Text>{message}</Text>
     </Section>
-  )
+  );
 }
 
 function IconHeart({ className }: { className: string }) {
@@ -56,7 +56,7 @@ function IconHeart({ className }: { className: string }) {
       </g>
       <path d="M32,43.9c0.6,0.1,1.3,0.2,2.1,0.2c2.8,0,6.5-0.8,9.4-3.8c0.1-0.2,0.3-0.3,0.4-0.5c-1.2-0.6-2.8-1-4.4-1  C35.9,38.8,32.8,41.1,32,43.9z" />
     </svg>
-  )
+  );
 }
 
 function IconFlower({ className }: { className: string }) {
@@ -97,6 +97,6 @@ function IconFlower({ className }: { className: string }) {
       </g>
       <g id="Layer_1" />
     </svg>
-  )
+  );
 }
-export default Intro
+export default Intro;

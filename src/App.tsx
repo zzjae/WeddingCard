@@ -1,48 +1,50 @@
-import classNames from 'classnames/bind'
-import { useEffect, useState } from 'react'
-import styles from './App.module.scss'
-import FullScreenMessage from '@shared/FullScreenMessage'
-import Heading from './components/sections/Heading'
-import Video from './components/sections/Video'
-import ImageGallery from '@/components/sections/ImageGallery'
-import Intro from './components/sections/Intro'
-import Invitation from '@/components/sections/Invitation'
-import { Wedding } from '@/models/wedding'
-const cx = classNames.bind(styles)
+import classNames from 'classnames/bind';
+import { useEffect, useState } from 'react';
+import styles from './App.module.scss';
+import FullScreenMessage from '@shared/FullScreenMessage';
+import Heading from '@/components/sections/Heading';
+import Video from '@/components/sections/Video';
+import ImageGallery from '@/components/sections/ImageGallery';
+import Intro from '@/components/sections/Intro';
+import Invitation from '@/components/sections/Invitation';
+import { Wedding } from '@/models/wedding';
+import Calendar from '@/components/sections/Calendar';
+import Map from '@/components/sections/Map';
+const cx = classNames.bind(styles);
 function App() {
-  const [wedding, setWedding] = useState<Wedding | null>(null)
-  const [loading, setLoading] = useState(false)
-  const [error, setError] = useState(false)
+  const [wedding, setWedding] = useState<Wedding | null>(null);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(false);
   // 1. wedding data call
   useEffect(() => {
-    setLoading(true)
+    setLoading(true);
     fetch('http://localhost:8888/wedding')
       .then((response) => {
         if (response.ok === false) {
-          throw new Error('청첩장정보를 불러오지 못했습니다')
+          throw new Error('청첩장정보를 불러오지 못했습니다');
         }
-        return response.json()
+        return response.json();
       })
       .then((data) => {
-        setWedding(data)
+        setWedding(data);
       })
       .catch((e) => {
-        console.log('에러발생', e)
-        setError(true)
+        console.log('에러발생', e);
+        setError(true);
       })
       .finally(() => {
-        setLoading(false)
-      })
-  }, [])
+        setLoading(false);
+      });
+  }, []);
 
   if (loading) {
-    return <FullScreenMessage type="loading" />
+    return <FullScreenMessage type="loading" />;
   }
   if (error) {
-    return <FullScreenMessage type="error" />
+    return <FullScreenMessage type="error" />;
   }
   if (wedding == null) {
-    return null
+    return null;
   }
   const {
     date,
@@ -51,7 +53,8 @@ function App() {
     bride,
     location,
     message: { intro, invitation },
-  } = wedding
+  } = wedding;
+
   return (
     <div className={cx('container')}>
       <Heading date={date} />
@@ -65,9 +68,11 @@ function App() {
       />
       <Invitation message={invitation} />
       <ImageGallery images={galleryImages} />
+      <Calendar date={date} />
+      <Map location={location} />
       {JSON.stringify(wedding)}
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

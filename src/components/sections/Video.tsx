@@ -1,8 +1,8 @@
-import classNames from 'classnames/bind'
-import styles from './Video.module.scss'
+import classNames from 'classnames/bind';
+import styles from './Video.module.scss';
 
-import Section from '@shared/Section'
-const cx = classNames.bind(styles)
+import Section from '@shared/Section';
+const cx = classNames.bind(styles);
 
 function Video() {
   return (
@@ -17,7 +17,7 @@ function Video() {
         <source src="/assets/medium.mp4" type="video/mp4"></source>
       </video>
     </Section>
-  )
+  );
 }
 
-export default Video
+export default Video;

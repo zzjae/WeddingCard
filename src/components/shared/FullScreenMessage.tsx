@@ -1,9 +1,9 @@
-import styles from './FullScreenMessage.module.scss'
-import classNames from 'classnames/bind'
+import styles from './FullScreenMessage.module.scss';
+import classNames from 'classnames/bind';
 
-const cx = classNames.bind(styles)
+const cx = classNames.bind(styles);
 interface FullScreenMessageProps {
-  type: 'loading' | 'error'
+  type: 'loading' | 'error';
 }
 function FullScreenMessage({ type }: FullScreenMessageProps) {
   return (
@@ -17,7 +17,7 @@ function FullScreenMessage({ type }: FullScreenMessageProps) {
         </>
       )}
     </div>
-  )
+  );
 }
 
 function Heart() {
@@ -39,7 +39,7 @@ function Heart() {
       </g>
       <g id="Layer_1" />
     </svg>
-  )
+  );
 }
 
 function Error() {
@@ -55,6 +55,6 @@ function Error() {
         fill="#464646"
       />
     </svg>
-  )
+  );
 }
-export default FullScreenMessage
+export default FullScreenMessage;
