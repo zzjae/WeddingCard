@@ -3,6 +3,7 @@ import styles from '@components/sections/Calendar.module.scss';
 import Section from '@/components/shared/Section';
 import { ko } from 'date-fns/locale';
 import { DayPicker } from 'react-day-picker';
+import { memo } from 'react';
 
 import 'react-day-picker/dist/style.css';
 import { parseISO, format } from 'date-fns';
@@ -61,4 +62,4 @@ function Calendar({ date }: { date: string }) {
   );
 }
 
-export default Calendar;
+export default memo(Calendar);
