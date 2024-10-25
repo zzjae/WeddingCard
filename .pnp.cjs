@@ -31,6 +31,7 @@ const RAW_RUNTIME_STATE =
           ["@testing-library/jest-dom", "npm:6.5.0"],\
           ["@testing-library/react", "virtual:efe1763f48a1a789144d819afe97cffa3346ee2f464e9c7652b26290d830b9a3e90e5496c21f0ef2e7f8a66e53bc8a549d7f1867c7213cd5156faefbd19468ef#npm:13.4.0"],\
           ["@testing-library/user-event", "virtual:efe1763f48a1a789144d819afe97cffa3346ee2f464e9c7652b26290d830b9a3e90e5496c21f0ef2e7f8a66e53bc8a549d7f1867c7213cd5156faefbd19468ef#npm:13.5.0"],\
+          ["@types/gh-pages", "npm:6.1.0"],\
           ["@types/jest", "npm:27.5.2"],\
           ["@types/node", "npm:16.18.108"],\
           ["@types/react", "npm:18.3.7"],\
@@ -45,6 +46,7 @@ const RAW_RUNTIME_STATE =
           ["eslint-config-react-app", "virtual:efe1763f48a1a789144d819afe97cffa3346ee2f464e9c7652b26290d830b9a3e90e5496c21f0ef2e7f8a66e53bc8a549d7f1867c7213cd5156faefbd19468ef#npm:7.0.1"],\
           ["eslint-plugin-prettier", "virtual:efe1763f48a1a789144d819afe97cffa3346ee2f464e9c7652b26290d830b9a3e90e5496c21f0ef2e7f8a66e53bc8a549d7f1867c7213cd5156faefbd19468ef#npm:5.2.1"],\
           ["eslint-plugin-react", "virtual:efe1763f48a1a789144d819afe97cffa3346ee2f464e9c7652b26290d830b9a3e90e5496c21f0ef2e7f8a66e53bc8a549d7f1867c7213cd5156faefbd19468ef#npm:7.36.1"],\
+          ["gh-pages", "npm:6.2.0"],\
           ["json-server", "npm:1.0.0-beta.2"],\
           ["prettier", "npm:3.3.3"],\
           ["react", "npm:18.3.1"],\
@@ -5063,6 +5065,15 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["@types/gh-pages", [\
+      ["npm:6.1.0", {\
+        "packageLocation": "../AppData/Local/Yarn/Berry/cache/@types-gh-pages-npm-6.1.0-b2ccdbda45-10c0.zip/node_modules/@types/gh-pages/",\
+        "packageDependencies": [\
+          ["@types/gh-pages", "npm:6.1.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["@types/graceful-fs", [\
       ["npm:4.1.9", {\
         "packageLocation": "../AppData/Local/Yarn/Berry/cache/@types-graceful-fs-npm-4.1.9-ebd697fe83-10c0.zip/node_modules/@types/graceful-fs/",\
@@ -7430,6 +7441,13 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["commander", [\
+      ["npm:11.1.0", {\
+        "packageLocation": "../AppData/Local/Yarn/Berry/cache/commander-npm-11.1.0-56e979613c-10c0.zip/node_modules/commander/",\
+        "packageDependencies": [\
+          ["commander", "npm:11.1.0"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
       ["npm:2.20.3", {\
         "packageLocation": "../AppData/Local/Yarn/Berry/cache/commander-npm-2.20.3-d8dcbaa39b-10c0.zip/node_modules/commander/",\
         "packageDependencies": [\
@@ -8720,6 +8738,15 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["email-addresses", [\
+      ["npm:5.0.0", {\
+        "packageLocation": "../AppData/Local/Yarn/Berry/cache/email-addresses-npm-5.0.0-218d2e9289-10c0.zip/node_modules/email-addresses/",\
+        "packageDependencies": [\
+          ["email-addresses", "npm:5.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["emittery", [\
       ["npm:0.10.2", {\
         "packageLocation": "../AppData/Local/Yarn/Berry/cache/emittery-npm-0.10.2-aac10498b5-10c0.zip/node_modules/emittery/",\
@@ -9924,6 +9951,27 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["filename-reserved-regex", [\
+      ["npm:2.0.0", {\
+        "packageLocation": "../AppData/Local/Yarn/Berry/cache/filename-reserved-regex-npm-2.0.0-5d8c6e337c-10c0.zip/node_modules/filename-reserved-regex/",\
+        "packageDependencies": [\
+          ["filename-reserved-regex", "npm:2.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["filenamify", [\
+      ["npm:4.3.0", {\
+        "packageLocation": "../AppData/Local/Yarn/Berry/cache/filenamify-npm-4.3.0-e6531169ab-10c0.zip/node_modules/filenamify/",\
+        "packageDependencies": [\
+          ["filenamify", "npm:4.3.0"],\
+          ["filename-reserved-regex", "npm:2.0.0"],\
+          ["strip-outer", "npm:1.0.1"],\
+          ["trim-repeated", "npm:1.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["filesize", [\
       ["npm:8.0.7", {\
         "packageLocation": "../AppData/Local/Yarn/Berry/cache/filesize-npm-8.0.7-4070ceca66-10c0.zip/node_modules/filesize/",\
@@ -10179,6 +10227,16 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "HARD"\
       }],\
+      ["npm:11.2.0", {\
+        "packageLocation": "../AppData/Local/Yarn/Berry/cache/fs-extra-npm-11.2.0-6783080799-10c0.zip/node_modules/fs-extra/",\
+        "packageDependencies": [\
+          ["fs-extra", "npm:11.2.0"],\
+          ["graceful-fs", "npm:4.2.11"],\
+          ["jsonfile", "npm:6.1.0"],\
+          ["universalify", "npm:2.0.1"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
       ["npm:9.1.0", {\
         "packageLocation": "../AppData/Local/Yarn/Berry/cache/fs-extra-npm-9.1.0-983c2ddb4c-10c0.zip/node_modules/fs-extra/",\
         "packageDependencies": [\
@@ -10335,6 +10393,22 @@ const RAW_RUNTIME_STATE =
           ["call-bind", "npm:1.0.7"],\
           ["es-errors", "npm:1.3.0"],\
           ["get-intrinsic", "npm:1.2.4"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["gh-pages", [\
+      ["npm:6.2.0", {\
+        "packageLocation": "../AppData/Local/Yarn/Berry/cache/gh-pages-npm-6.2.0-d37e7457b7-10c0.zip/node_modules/gh-pages/",\
+        "packageDependencies": [\
+          ["gh-pages", "npm:6.2.0"],\
+          ["async", "npm:3.2.6"],\
+          ["commander", "npm:11.1.0"],\
+          ["email-addresses", "npm:5.0.0"],\
+          ["filenamify", "npm:4.3.0"],\
+          ["find-cache-dir", "npm:3.3.2"],\
+          ["fs-extra", "npm:11.2.0"],\
+          ["globby", "npm:11.1.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -13880,6 +13954,7 @@ const RAW_RUNTIME_STATE =
           ["@testing-library/jest-dom", "npm:6.5.0"],\
           ["@testing-library/react", "virtual:efe1763f48a1a789144d819afe97cffa3346ee2f464e9c7652b26290d830b9a3e90e5496c21f0ef2e7f8a66e53bc8a549d7f1867c7213cd5156faefbd19468ef#npm:13.4.0"],\
           ["@testing-library/user-event", "virtual:efe1763f48a1a789144d819afe97cffa3346ee2f464e9c7652b26290d830b9a3e90e5496c21f0ef2e7f8a66e53bc8a549d7f1867c7213cd5156faefbd19468ef#npm:13.5.0"],\
+          ["@types/gh-pages", "npm:6.1.0"],\
           ["@types/jest", "npm:27.5.2"],\
           ["@types/node", "npm:16.18.108"],\
           ["@types/react", "npm:18.3.7"],\
@@ -13894,6 +13969,7 @@ const RAW_RUNTIME_STATE =
           ["eslint-config-react-app", "virtual:efe1763f48a1a789144d819afe97cffa3346ee2f464e9c7652b26290d830b9a3e90e5496c21f0ef2e7f8a66e53bc8a549d7f1867c7213cd5156faefbd19468ef#npm:7.0.1"],\
           ["eslint-plugin-prettier", "virtual:efe1763f48a1a789144d819afe97cffa3346ee2f464e9c7652b26290d830b9a3e90e5496c21f0ef2e7f8a66e53bc8a549d7f1867c7213cd5156faefbd19468ef#npm:5.2.1"],\
           ["eslint-plugin-react", "virtual:efe1763f48a1a789144d819afe97cffa3346ee2f464e9c7652b26290d830b9a3e90e5496c21f0ef2e7f8a66e53bc8a549d7f1867c7213cd5156faefbd19468ef#npm:7.36.1"],\
+          ["gh-pages", "npm:6.2.0"],\
           ["json-server", "npm:1.0.0-beta.2"],\
           ["prettier", "npm:3.3.3"],\
           ["react", "npm:18.3.1"],\
@@ -17670,6 +17746,16 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["strip-outer", [\
+      ["npm:1.0.1", {\
+        "packageLocation": "../AppData/Local/Yarn/Berry/cache/strip-outer-npm-1.0.1-4ed024bb0a-10c0.zip/node_modules/strip-outer/",\
+        "packageDependencies": [\
+          ["strip-outer", "npm:1.0.1"],\
+          ["escape-string-regexp", "npm:1.0.5"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["style-loader", [\
       ["npm:3.3.4", {\
         "packageLocation": "../AppData/Local/Yarn/Berry/cache/style-loader-npm-3.3.4-e2ff5c12be-10c0.zip/node_modules/style-loader/",\
@@ -18179,6 +18265,16 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["tr46", "npm:3.0.0"],\
           ["punycode", "npm:2.3.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["trim-repeated", [\
+      ["npm:1.0.0", {\
+        "packageLocation": "../AppData/Local/Yarn/Berry/cache/trim-repeated-npm-1.0.0-1152152315-10c0.zip/node_modules/trim-repeated/",\
+        "packageDependencies": [\
+          ["trim-repeated", "npm:1.0.0"],\
+          ["escape-string-regexp", "npm:1.0.5"]\
         ],\
         "linkType": "HARD"\
       }]\
