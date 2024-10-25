@@ -72,5 +72,6 @@
     "prettier": "^3.3.3",
     "webpack": "^5.95.0",
     "webpack-font-preload-plugin": "^1.5.0"
-  }
+  },
+  "homepage": "http://zzjae.com/wedding"
 }
