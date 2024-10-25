@@ -24,15 +24,15 @@
     "web-vitals": "^2.1.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "craco start",
     "build": "craco build",
     "test": "react-scripts test",
     "eject": "craco eject",
     "lint": "eslint \"src/**/*.{js,jsx,ts,tsx}\"",
     "lint:fix": "eslint --fix \"src/**/*.{js,jsx,ts,tsx}\"",
-    "dev:db": "json-server --watch db.json --port=8888",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "dev:db": "json-server --watch db.json --port=8888"
   },
   "eslintConfig": {
     "extends": [
@@ -59,6 +59,7 @@
       "last 1 safari version"
     ]
   },
+  "homepage": "https://zzjae.github.io/WeddingCard/",
   "packageManager": "yarn@4.5.0",
   "devDependencies": {
     "@craco/craco": "^7.1.0",
@@ -76,6 +77,5 @@
     "prettier": "^3.3.3",
     "webpack": "^5.95.0",
     "webpack-font-preload-plugin": "^1.5.0"
-  },
-  "homepage": "https://zzjae.github.io/WeddingCard/"
+  }
 }
